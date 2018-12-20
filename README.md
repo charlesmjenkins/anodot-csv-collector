@@ -41,8 +41,9 @@
 }
 ```
 2. Upload CSVs to ingest to the 'incoming' directory
-    - Incoming files must be named in alignment with your settings definitions:
-    - Example: prefix_filename_1M_2018_01_01_00_00_00.csv
+    - Incoming files MUST be named in alignment with your settings definitions.
+        - Example: prefix_filename_1M_2018_01_01_00_00_00.csv
+    - Incoming files' samples MUST be sorted in ascending order of timestamp prior to ingestion (unsorted data will not ingest accurately into Anodot)
 
 3. Run with this command in your terminal:
 ```
