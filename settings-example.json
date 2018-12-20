@@ -1,0 +1,22 @@
+{
+    "filenamePrefix": "myprefix",
+    "filename": "myfilename",
+    "collectionInterval": "1D",
+    "timestamp": "mytimestampcolumnheader",
+    "timestampFormat": "yyyy/mm/dd hh:mm:ss",
+    "measures": {
+        "m1":"counter",
+        "m2":"gauge"
+    },
+    "dimensions": [
+        "d1",
+        "d2",
+        "ver"
+    ],
+    "samplesPerPost": 1000,
+    "timeBetweenPosts": 0.6,
+    "token": "mytoken",
+    "sysTokenVariableName": "ANODOT_TOKEN",
+    "fillMissingMeasureValuesWithZero": true,
+    "fillMissingDimensionValuesWithNone": true
+}
