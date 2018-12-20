@@ -18,7 +18,6 @@
 # Imports
 import argparse, json, sys, os, logging, time, glob, csv
 import requests
-import copy
 from datetime import datetime
 from datetime import timezone
 from time import sleep
@@ -134,7 +133,7 @@ class Stream:
         if not isinstance(self.samplesPerPost, int):
             logging.error("Setting 'samplesPerPost' must be an integer.")
             is_valid = False
-        elif self.samplesPerPost > 9000:
+        elif self.samplesPerPost > 1000:
             logging.error("Setting 'samplesPerPost' must be <= 1000.")
             is_valid = False
 
